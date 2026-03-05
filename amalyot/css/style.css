@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.burger-menu {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.burger-line {
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: white;
+}
+.burger-menu:hover .burger-line:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu:hover .burger-line:nth-child(1) {
+  transition: 0.4s ease;
+  transform: translateY(13.5px) rotate(45deg);
+}
+.burger-menu:hover .burger-line:nth-child(3) {
+  transition: 0.4s ease;
+  transform: translateY(-13.5px) rotate(-45deg);
+}
